@@ -1,0 +1,17 @@
+Source: golang-github-cupcake-rdb
+Section: devel
+Priority: extra
+Maintainer: pkg-go <pkg-go-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go
+Standards-Version: 3.9.8
+Homepage: https://github.com/cupcake/rdb
+
+Package: golang-github-cupcake-rdb-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-go
+Built-Using: ${misc:Built-Using}
+Description: Redis RDB parser for Go
+ rdb is a Go package that implements parsing and encoding of the Redis RDB file format.
